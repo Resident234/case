@@ -23,18 +23,13 @@ local/templates/eshop_bootstrap_green/components/bbc/elements/recipes/detail.php
 
 
 Созданные классы:
-
 local/classes/CIBlockFormatPropertiesCustom.php
-
 local/classes/Helper.php
-
 local/classes/HelperBBC.php
-
 local/classes/iBlockData.php
 
 
 Обработчики событий расположены здесь:
-
 local/php_interface/include/handlers.php
 
 
