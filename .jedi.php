@@ -12,7 +12,7 @@
  */
 
 return [
-    'web-dir' => 'sites/s1',
+    'web-dir' => '/',
     'env-dir' => 'environments',
     'useModules' => true,
     'commands' => [
