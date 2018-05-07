@@ -4,7 +4,7 @@
 
 Пример URL в применённым фильтром по ингредиенту: /recipes/?ingredient=877
 
-Пример детальной страницы рецепта: http://webprofy.local/recipes/kurinye-ruletiki-s-syrom/
+Пример детальной страницы рецепта: /recipes/kurinye-ruletiki-s-syrom/
 
 
 Используется bbc:
