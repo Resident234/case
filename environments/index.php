@@ -16,8 +16,12 @@
  */
 
 return [
-    'default' => [
-        'name' => 'Default',
-        'path' => 'default'
+    'dev' => [
+        'name' => 'Development',
+        'path' => 'dev'
+    ],
+    'prod' => [
+        'name' => 'Production',
+        'path' => 'prod',
     ],
 ];
