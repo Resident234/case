@@ -27,7 +27,7 @@ local/classes/iBlockData.php
 Обработчики событий расположены здесь:
 local/php_interface/include/handlers.php
 
-Front-End использовался из штатного шаблона решения
+Front-End использовался из штатного шаблона интернет-магазина
 Дополнительные стили лежат здесь local/assets/styles , для сборки используется webpack-encore
 
 
