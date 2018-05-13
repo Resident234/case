@@ -35,12 +35,6 @@ local/php_interface/include/handlers.php
 
 Front-End использовался из штатного шаблона интернет-магазина
 
-Дополнительные стили лежат здесь local/assets/styles , для сборки используется webpack-encore
-
-
-Все задействованные инфоблоки имеют тип "Рецепты"
-
-http://webprofy.local/bitrix/admin/iblock_admin.php?type=recipes&lang=ru&admin=N
-
+Дополнительные стили лежат в local/assets/styles , для сборки используется webpack-encore
 
 Проект работает на основе решения https://github.com/regiomedia/bitrix-project
