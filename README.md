@@ -1,49 +1,49 @@
-# Описание кейса
+# Case Description
 
-На типовой установке Битрикс (решение “Интернет-магазин” или “Корпоративный сайт”) с использованием типовых компонентов news, news.list и news.detail нужно запилить на сайте раздел "Рецепты". 
+On a typical Bitrix installation (solution “Online store” or “Corporate site”) using standard components news, news.list and news.detail, you need to add a section “Recipes” on the site.
 
-На карточке рецепта, кроме всего, должен быть список необходимых ингредиентов с указанием количества (типа "Мука: 1 стакан, Соль: 1 ч. л."). 
+On the recipe card, besides everything, there should be a list of necessary ingredients with an indication of the amount (such as "Flour: 1 cup, Salt: 1 tsp.").
 
-Название ингредиента должно быть ссылкой, ведущей на страницу со списком всех рецептов, в которых используется этот ингредиент. Дизайн раздела на ваше усмотрение.
-
-
-# Краткие пояснения к результатам
-
-Раздел с рецептами располагается здесь: /recipes/
-
-Пример URL в применённым фильтром по ингредиенту: /recipes/?ingredient=877
-
-Пример детальной страницы рецепта: /recipes/kurinye-ruletiki-s-syrom/
+The name of the ingredient should be a link to a page with a list of all recipes that use this ingredient. Design section at your discretion.
 
 
-Используется bbc:
+# Brief explanation of the results
 
-1) Комплексный компонент
+The section with recipes is located here: /recipes/
+
+Example URL in the applied filter by ingredient: /recipes/?ingredient=877
+
+Sample recipe detail page: /recipes/kurinye-ruletiki-s-syrom/
+
+
+Bbc used:
+
+1) Complex component
 
 local/templates/eshop_bootstrap_green/components/bbc/elements/recipes/index.php
 
 local/templates/eshop_bootstrap_green/components/bbc/elements/recipes/detail.php
 
-2) bbc.custom:recipes.list отнаследованный от bbc:elements.list
+2) bbc.custom:recipes.list inherited from bbc:elements.list
 
-3) bbc.custom:recipes.detail отнаследованный от bbc:elements.detail
+3) bbc.custom:recipes.detail inherited from bbc:elements.detail
 
-В отнаследованных классах RecipesDetail и RecipesList в prepareElementsResult задействован специально написанный вспомогательный класс \Local\HelperBBC::formatter , который приводит некоторую информацию из arResult к более читаемому виду.
+In the inherited RecipesDetail and RecipesList classes, a specially written auxiliary class \Local\HelperBBC::formatter is involved in the prepareElementsResult, which brings some information from arResult to a more readable form.
 
-
-Созданные классы:
+Classes created:
 local/classes/CIBlockFormatPropertiesCustom.php
 local/classes/Helper.php
 local/classes/HelperBBC.php
 local/classes/iBlockData.php
 
 
-Обработчики событий расположены здесь:
+Event handlers are located here:
 local/php_interface/include/handlers.php
 
 
-Front-End использовался из штатного шаблона интернет-магазина
+Front-End used from regular online store template
 
-Дополнительные стили лежат в local/assets/styles , для сборки используется webpack-encore
+Additional styles lie in local/assets/styles , used for assembly webpack-encore
 
-Проект работает на основе решения https://github.com/regiomedia/bitrix-project
+
+The project works on the basis of the solution https://github.com/regiomedia/bitrix-project
